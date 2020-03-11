@@ -49,6 +49,7 @@ height: auto;
 .single-img{
   padding: 0 20px 20px;
 }
+
 img:hover{
   opacity: .5;
   transition: .9s;

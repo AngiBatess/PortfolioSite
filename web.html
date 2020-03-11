@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <link rel="stylesheet" href="gallerystyles.css">
+      <link rel="stylesheet" href="webstyles.css">
     <title></title>
   </head>
   <body>
@@ -22,14 +22,23 @@
     </header>
     <div class="wrapper2">
       <h1>Web Gallery</h1>
-      <div class="img-area">
-        <div class="single-img"><img src="Blue1.jpg" alt=""></div>
-          <div class="single-img"><img src="Blue2.jpg" alt=""></div>
-      <div class="single-img"><img src="Blue3.jpg" alt=""></div>
-      <div class="single-img"><img src="Blue4.jpg" alt=""></div>
-      <div class="single-img"><img src="Blue5.jpg" alt=""></div>
-      <div class="single-img"><img src="Blue6.jpg" alt=""></div>
-      </div>
+  <input type="checkbox" id="pic-1"><label for="pic-1" class="lightbox"><img src="Blue1.jpg" alt=""></label>
+  <input type="checkbox" id="pic-2"><label for="pic-2" class="lightbox"><img src="Blue2.jpg" alt=""></label>
+  <input type="checkbox" id="pic-3"><label for="pic-3" class="lightbox"><img src="Blue3.jpg" alt=""></label>
+  <input type="checkbox" id="pic-4"><label for="pic-4" class="lightbox"><img src="Blue4.jpg" alt=""></label>
+  <input type="checkbox" id="pic-5"><label for="pic-5" class="lightbox"><img src="Blue5.jpg" alt=""></label>
+  <input type="checkbox" id="pic-6"><label for="pic-6" class="lightbox"><img src="Blue6.jpg" alt=""></label>
+
+
+  <div class="grid">
+  <label for="pic-1" class="grid-item"><img src="Blue1.jpg" alt=""></label>
+  <label for="pic-2" class="grid-item"><img src="Blue2.jpg" alt=""></label>
+  <label for="pic-3" class="grid-item"><img src="Blue3.jpg" alt=""></label>
+  <label for="pic-4" class="grid-item"><img src="Blue4.jpg" alt=""></label>
+  <label for="pic-5" class="grid-item"><img src="Blue5.jpg" alt=""></label>
+  <label for="pic-6" class="grid-item"><img src="Blue6.jpg" alt=""></label>
+
+  </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,91 @@
+.wrapper{
+  width: 1170px;
+  margin: auto;
+}
+header{
+  height: 25vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.nav-area{
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: black;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: futura;
+  font-size: 16px;
+}
+.nav-area li a:hover{
+  background: #fff;
+  color: #333;
+}
+.logo img{
+  width: 100px;
+float: left;
+height: auto;
+}
+.wrapper2 h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: futura;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+label[for] { cursor: pointer; }
+input[type='checkbox'] { display: none; }
+
+/* top was 0 before, need to just shift it down! */
+.lightbox, .grid { width: 100%; position: fixed; top: 0; left: 0; }
+
+.lightbox {
+z-index: 1;
+min-height: 100%;
+overflow: auto;
+transform: scale(0);
+transition: transform .5s ease-out;
+}
+
+.lightbox img {
+position: fixed;
+top: 50%;
+left: 50%;
+max-width: 96%;
+max-height: 96%;
+transform: translate(-50%, -50%);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+input[type='checkbox']:checked + .lightbox { transform: scale(1); }
+input[type='checkbox']:checked ~ .grid { opacity: 0.125; }
+
+.grid {
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+height: 100%;
+padding: 16px;
+overflow: auto;
+z-index: 0;
+background: #000;
+text-align: center;
+transition: opacity 0.75s;
+}
+.grid .grid-item { display: block; width: 25%; padding: 16px; opacity: 0.55; transition: opacity 0.2s; }
+.grid .grid-item:hover { opacity: 1; }
+
+@media screen and (max-width: 1280px) { .grid .grid-item { width: 33.3333%; } }
+@media screen and (max-width: 960px)  { .grid .grid-item { width: 50%; } }
+@media screen and (max-width: 480px)  { .grid .grid-item { width: 100%; } }
+
+.grid img { max-width: 100%; max-height: 100%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
