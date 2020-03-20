@@ -18,7 +18,7 @@ header{
   display: inline-block;
 }
 .nav-area li a{
-  color: black;
+  color: pink;
   text-decoration: none;
   padding: 5px 20px;
   font-family: futura;
@@ -44,7 +44,7 @@ height: auto;
 label[for] { cursor: pointer; }
 input[type='checkbox'] { display: none; }
 
-/* top was 0 before, need to just shift it down! */
+/* https://codepen.io/butschy/pen/WwBdxO */
 .lightbox, .grid { width: 100%; position: fixed; top: 0; left: 0; }
 
 .lightbox {
@@ -77,7 +77,7 @@ height: 100%;
 padding: 16px;
 overflow: auto;
 z-index: 0;
-background: #000;
+/* background: #000; */
 text-align: center;
 transition: opacity 0.75s;
 }
