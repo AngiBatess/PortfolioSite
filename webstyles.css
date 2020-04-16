@@ -1,13 +1,18 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+*{border: 1px solid red;}
 .wrapper{
-  width: 1170px;
+  width: 100%px;
   margin: auto;
 }
 header{
-  height: 25vh;
+  height: 12vh;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   position: relative;
+  background-color: rgba(0,255,0,0.3);
+  /* width: 100%; */
 }
 .nav-area{
   float: right;
@@ -39,7 +44,6 @@ height: auto;
   font-family: futura;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
 
 label[for] { cursor: pointer; }
 input[type='checkbox'] { display: none; }
@@ -69,6 +73,7 @@ input[type='checkbox']:checked + .lightbox { transform: scale(1); }
 input[type='checkbox']:checked ~ .grid { opacity: 0.125; }
 
 .grid {
+  top: 14vh;
 display: flex;
 flex-wrap: wrap;
 align-items: flex-start;
